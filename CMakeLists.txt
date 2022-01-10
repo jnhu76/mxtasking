@@ -6,11 +6,11 @@ INCLUDE(scripts/FindSSE.cmake)
 FindSSE()
 
 # Set compile flags
-set(CMAKE_CXX_STANDARD 17)
+# set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
 #set(CMAKE_CXX_CLANG_TIDY "clang-tidy;--extra-arg-before=-std=c++17 --system-headers=0")
-set(CMAKE_CXX_FLAGS "-pedantic -Wall -Wextra -Werror \
+set(CMAKE_CXX_FLAGS "-std=c++17 -pedantic -Wall -Wextra -Werror \
  -Wno-invalid-offsetof -Wcast-align -Wcast-qual -Wctor-dtor-privacy -Wdisabled-optimization \
  -Wformat=2 -Winit-self -Wmissing-declarations -Wmissing-include-dirs -Woverloaded-virtual \
  -Wredundant-decls -Wshadow -Wsign-promo -Wstrict-overflow=5 -Wswitch-default -Wundef \
