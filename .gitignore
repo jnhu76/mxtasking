@@ -10,3 +10,4 @@ ycsb_binding/bin
 lib/*.so
 *.cbp
 ./idea
+build
